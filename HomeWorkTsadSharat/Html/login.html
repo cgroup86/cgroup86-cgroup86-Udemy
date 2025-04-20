@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../Css/loginRegisterCss.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="index.html">
+            <!--home icon-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                <path d="M3 9.5L12 3l9 6.5v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-11z"></path>
+            </svg>
+            <!--home icon-->
+        </a>
+
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div class="input-field">
+                <input type="text" id="email" name="email" required>
+                <label for="email">Enter your email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" name="password" minlength="4" required>
+                <label for="password">Enter your password</label>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="register">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+        </form>
+
+        <script src="../Js/commonLogin.js"></script>
+        <script src="../Js/ajaxCalls.js"></script>
+        <script src="../Js/loginJs.js"></script>
+    </div>
+</body>
+</html>

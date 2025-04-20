@@ -1,0 +1,31 @@
+﻿.inactive-course-title {
+    color: red;
+}
+
+.course-card.inactive {
+    color: red;
+    position: relative;
+}
+
+    .course-card.inactive:hover::after {
+        content: 'Course is not active';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    .course-card.inactive:hover .upper-section img {
+        opacity: 0.5;
+    }
+
+    .course-card.inactive .upper-section a {
+        pointer-events: none;
+        cursor: default;
+    }
